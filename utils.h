@@ -6,7 +6,7 @@ struct frame {
     char value[1024];
 };
 
-struct frame *getFrames(FILE *filePointer);
+struct frame *getFrames(FILE *filePointer, int *framesCount);
 
 void setFrame(FILE *filePointer, char *name, char *value, char *output);
 
