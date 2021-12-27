@@ -13,7 +13,6 @@ int main(int argc, char *argv[]) {
     char *filepath = strtok(NULL, "=");
 
     FILE *fptr = fopen(filepath, "rb");
-    int frameCount = 0;
 
     if (strstr(argv[2], "--show") != NULL) {
         showFrames(fptr);
